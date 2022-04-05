@@ -1,0 +1,187 @@
+@import "base/reset";
+@import "base/normalize";
+@import "base/fonts";
+@import "base/body";
+
+body{
+    font-family: 'Mohr', Arial, Helvetica, sans-serif !important;
+}
+
+h1, h2, p{
+    color: #343579;
+}
+
+.topBar{
+    height: 36px;
+    background-color: #343579;
+    @media (min-width: 768px) {
+        height: 46px;
+    }
+}
+
+.topBar p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+    
+}
+
+.heroBanner{
+    position: relative;
+    margin-bottom:  50px;
+}
+
+.mobile{
+    display: block;
+}
+
+.desktop{
+    display: none;
+}
+
+
+.heroCaption{
+    position: absolute;
+    
+}
+
+.heroCaption h1{
+    font-size: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.heroCaption p{
+    font-size: 24px;
+    
+}
+
+.heroCta{
+    color: #343579;
+    background-color: #77b896;
+    border: none;
+    border-radius: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 10px 20px 10px;
+    padding: 10px 30px 5px 30px;
+
+}
+
+.heroCta:hover{
+    color: #fff;
+    background-color: #343579;
+}
+
+.products{
+    margin-bottom: 50px;
+}
+
+.products h2{
+    display: inline-flex;
+    font-weight: 900;
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #f0f002;
+    margin-bottom: 30px;
+}
+
+.product{
+    margin: 0 5px;
+}
+
+.product img{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.productTitle{
+    font-size: 18px;
+    font-weight: 900;
+    color: #494949;
+    margin-bottom: 15px;
+}
+
+.productPrice{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f002;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    
+}
+
+.addCart{
+    color: #FFF;
+    background-color: #343579;
+    border: none;
+    border-radius: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 10px;
+    padding: 10px 30px 5px 30px;
+}
+
+.addCart:hover{
+    color: #343579;
+    background-color: #77b896;
+}
+
+
+@media (min-width: 768px) { 
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+
+    .heroCaption{
+        max-width: 38vw;
+        top: 3vw;
+        left: 8vw;
+    }
+
+    .heroCaption h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .heroCaption p{
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+}
+
+
+@media (min-width: 1024px) { 
+
+    .heroCaption{
+        max-width: 32vw;
+        top: 3vw;
+        left: 16vw;
+    }
+
+    .heroCaption h1{
+        font-size: 46px;
+        line-height: 55px;
+    }
+
+    .heroCaption p{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1550px) { 
+    .heroCaption{
+        max-width: 32vw;
+        top: 13vw;
+        left: 18vw;
+    }
+}
